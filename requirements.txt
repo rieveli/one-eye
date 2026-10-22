@@ -1,0 +1,9 @@
+# Exact versions (tested 2026-10-16). Pinned on purpose: supply-chain hygiene, see docs/DECISIONS.md.
+PySide6==6.12.0
+pyqtgraph==0.14.0
+psutil==7.2.2
+numpy==2.5.4
+scikit-learn==1.9.1
+requests==2.34.2
+keyring==25.7.0
+anthropic==1.15.0

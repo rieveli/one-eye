@@ -1,0 +1,5 @@
+# One Eye known-bad IP list (one IP per line, # = comment).
+# Downloaded feeds (abuse.ch Feodo Tracker) are stored separately in %APPDATA%\OneEye\feeds.
+
+# Demo entry: 203.0.113.0/24 is TEST-NET-3, reserved for documentation, never a real host.
+203.0.113.66

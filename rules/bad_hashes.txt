@@ -1,0 +1,8 @@
+# One Eye known-malware SHA-256 list (one hash per line, # = comment).
+# Downloaded feeds (MalwareBazaar) are stored separately in %APPDATA%\OneEye\feeds.
+
+# Harmless demo sample created by the "Create demo files" button (secdash/core/demo.py). NOT malware.
+3873801dbdece4c81398036c9a8a4c116d75ecadfbacd56fdc2ed14ad358310b
+
+# EICAR antivirus test file (industry-standard harmless test file)
+275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f
