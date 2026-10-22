@@ -1,6 +1,6 @@
 # One Eye: Design Decisions & Justifications
 
-Use these points on the slides and when judges ask "why did you do it this way?".
+Explanation and Justifications of the Decisions made by creator. 
 
 ---
 
@@ -27,7 +27,7 @@ These numbers appear live in the sidebar ("One Eye itself: …"), so judges can 
 **Fair caveat:** most of the RAM is the Python side (Qt, numpy, scikit-learn), which a web UI would
 need too. The native UI saves the browser engine on top, which is real but not the majority.
 
-### How to say it to the judges
+### How to explain? :
 1. **"A monitor must not be the problem."** A health tool eating 300 MB of RAM would appear
    in its own "heavy apps" list. Native UI keeps our own footprint small.
 2. **"Smaller attack surface."** No embedded browser and no JavaScript means fewer ways to attack the tool.
