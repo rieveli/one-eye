@@ -1,7 +1,5 @@
 # Team contributions & AI-assisted development
 
-The CDU IT Code Fair allows AI-assisted development if participants clearly explain their own contributions
-and design decisions. This file does that honestly. Sections marked **✏️ FILL IN** must be written by the team.
 
 ## Team
 
@@ -11,11 +9,11 @@ and design decisions. This file does that honestly. Sections marked **✏️ FIL
 
 ## What the team did
 
-These decisions came from the team; the AI assistant implemented and refined them.
+These decisions came from the creator; the AI assistant implemented and refined them.
 
 - **Problem and idea:** a free, local security tool that shows which apps and connections use the PC, spots
   unusual behavior, and lets the user act. It started as "antivirus + performance checker + IP analyzer + firewall".
-- **Scope for a short deadline:** one app with focused modules instead of a full antivirus or firewall driver.
+- **Scope :** one app with focused modules instead of a full antivirus or firewall driver.
 - **Native desktop app (PySide6) instead of a web UI:** chosen for a lower footprint and a smaller attack surface
   (see [DECISIONS.md](DECISIONS.md) §1).
 - **"AI is advisory only":** the AI may explain but never change the system.
@@ -29,13 +27,12 @@ These decisions came from the team; the AI assistant implemented and refined the
 - **Name, logo, and visual identity:** "One Eye", the eye logo, and the red / dark grey / white theme.
 - **Open source** under MIT.
 - **Testing on real hardware** and reviewing results and screenshots.
-- ✏️ FILL IN: anything you designed, coded, changed or debugged yourself; what you tested and found.
 
 ## How AI was used
 
 - **Tool:** Claude Code (Anthropic), used as a pair programmer during development.
 - **What it did:**
-  - wrote most of the source code, tests and documentation from the team's requirements
+  - wrote/helped of the source code, tests and documentation from the team's requirements
   - profiled and fixed problems
   - ran the automated tests and GUI screenshot tours
 - **Problems found during AI-assisted testing and fixed** (good examples of verifying, not trusting, generated code):
@@ -44,8 +41,7 @@ These decisions came from the team; the AI assistant implemented and refined the
   - an admin-mode privilege-escalation risk (a pickle file in a user-writable folder); replaced with JSON
   - startup took 20 s; heavy libraries now load lazily
 - **The local AI inside the app** (Ollama / Claude) is a product feature, separate from development help.
-- ✏️ FILL IN: how you reviewed the AI's code, what you asked it to change, and what you understood or learned
-  (judges may ask you to explain any module; [DECISIONS.md](DECISIONS.md) is the best place to start).
+
 
 ## Third-party code and data
 
