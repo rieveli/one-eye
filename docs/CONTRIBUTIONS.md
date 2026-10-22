@@ -7,7 +7,7 @@ and design decisions. This file does that honestly. Sections marked **✏️ FIL
 
 | Member | Role | Main contributions |
 |---|---|---|
-| ✏️ FILL IN (name, GitHub handle) | ✏️ e.g. project lead, product owner, tester | ✏️ |
+| ✏️ Veli | ✏️ creator | ✏️ |
 
 ## What the team did
 
