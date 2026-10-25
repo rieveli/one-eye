@@ -35,7 +35,7 @@ These decisions came from the creator; the AI assistant implemented and refined 
   - wrote/helped of the source code, tests and documentation from the team's requirements
   - profiled and fixed problems
   - ran the automated tests and GUI screenshot tours
-- **Problems found during AI-assisted testing and fixed** (good examples of verifying, not trusting, generated code):
+- **Problems found during AI-assisted testing and fixed** :
   - sampling took 2.5 s because of an O(n²) process lookup; replaced with one Windows API call (0.07 s)
   - the first ML version flagged big normal apps; redesigned with per-app baselines
   - an admin-mode privilege-escalation risk (a pickle file in a user-writable folder); replaced with JSON
