@@ -1,11 +1,10 @@
 <p align="center"><img src="assets/logo.png" width="360" alt="One Eye logo"></p>
 
-# One Eye: Local Endpoint Security & Intelligence
-
-**One eye sees all. You stay in control.**
-A free, open-source Windows security dashboard: it watches your apps and network, spots unusual
-behavior with machine learning, and lets **you** decide what to do. Nothing is changed without your click,
-and the AI assistant can only advise.
+**Human-centred local security. ML notices. AI explains. You decide.**
+One Eye is a free, open-source Windows dashboard that sits on top of Windows Defender and turns security from a
+black box into something you can see and control: machine learning learns what's normal for each app on *your*
+PC, AI explains alerts in plain English, and every action, from quarantine to firewall blocks, is your click,
+reversible and logged.
 
 **▶ Demo video:** ✏️ YouTube link here · **⬇ Download:** see [Releases](../../releases) · **Team & AI use:** [docs/CONTRIBUTIONS.md](docs/CONTRIBUTIONS.md)
 
