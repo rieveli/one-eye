@@ -128,7 +128,7 @@ installs to Program Files): `winget install JRSoftware.InnoSetup`, then
 | ![Response & action log](docs/screenshots/4_response_log.png) | ![Connections](docs/screenshots/2_connections.png) |
 
 Design decisions and the security reasoning behind them: **[docs/DECISIONS.md](docs/DECISIONS.md)** ·
-Demo video script: **[docs/DEMO_SCRIPT.md](docs/DEMO_SCRIPT.md)** · Reporting a vulnerability: **[SECURITY.md](SECURITY.md)**
+ · Reporting a vulnerability: **[SECURITY.md](SECURITY.md)**
 
 ## Project layout
 
