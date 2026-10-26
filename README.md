@@ -8,7 +8,7 @@ black box into something you can see and control: machine learning learns what's
 PC, AI explains alerts in plain English, and every action, from quarantine to firewall blocks, is your click,
 reversible and logged.
 
-**▶ Demo video:** ✏️ YouTube link here · **⬇ Download:** see [Releases](../../releases) · **Team & AI use:** [docs/CONTRIBUTIONS.md](docs/CONTRIBUTIONS.md)
+**▶ Demo video:** [✏️ YouTube link here](https://youtu.be/Dz9ZcO_xkUg) · **⬇ Download:** see [Releases](../../releases) · **Team & AI use:** [docs/CONTRIBUTIONS.md](docs/CONTRIBUTIONS.md)
 
 ![System Health](docs/screenshots/1_health_threat.png)
 
