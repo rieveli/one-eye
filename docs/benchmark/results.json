@@ -1,0 +1,217 @@
+{
+  "machine": {
+    "cores": 16,
+    "ram_gb": 15.7,
+    "os": "win32",
+    "python": "3.13.2"
+  },
+  "settings": {
+    "learn": 180,
+    "clean": 300,
+    "trials": 3,
+    "run": 35,
+    "interval": 2.0,
+    "scan_limit": 3000,
+    "threshold": 0.7
+  },
+  "started": "2026-10-28 14:18",
+  "learn": {
+    "seconds": 182,
+    "rows": 11510,
+    "apps_learned": 127
+  },
+  "clean": {
+    "seconds": 300,
+    "samples": 150,
+    "app_samples": 18993,
+    "false_alarms": 3,
+    "false_alarms_by_source": {
+      "rule": 2,
+      "ml": 1
+    },
+    "low_severity_tips": 2,
+    "security_false_alarms": 1,
+    "false_alarms_per_hour": 36.0,
+    "ml_app_sample_fp_rate": 5e-05,
+    "ml_score_median": 0.019,
+    "ml_score_p99": 0.269,
+    "alerts": [
+      "rule: Edge WebView2: LOW Idle in background for a long time but holding 323 MB RAM. Close it?",
+      "ml: Microsoft Edge: ML anomaly score 0.95",
+      "rule: Edge WebView2: LOW Idle in background for a long time but holding 429 MB RAM. Close it?"
+    ]
+  },
+  "threats": [
+    {
+      "scenario": "Full miner",
+      "simulates": "8 threads, ~50% of the PC",
+      "trials": [
+        {
+          "rule_s": 8.0,
+          "ml_s": 10.0,
+          "detected": true,
+          "peak_cpu": 50.0,
+          "peak_ml_score": 0.99,
+          "other_alerts": 1
+        },
+        {
+          "rule_s": 8.0,
+          "ml_s": 8.0,
+          "detected": true,
+          "peak_cpu": 50.0,
+          "peak_ml_score": 0.99,
+          "other_alerts": 1
+        },
+        {
+          "rule_s": 8.0,
+          "ml_s": 8.0,
+          "detected": true,
+          "peak_cpu": 50.6,
+          "peak_ml_score": 0.99,
+          "other_alerts": 1
+        }
+      ],
+      "detection_rate": 1.0,
+      "rule_rate": 1.0,
+      "ml_rate": 1.0
+    },
+    {
+      "scenario": "Throttled miner",
+      "simulates": "1 core, ~6% of the PC",
+      "trials": [
+        {
+          "rule_s": null,
+          "ml_s": null,
+          "detected": false,
+          "peak_cpu": 6.2,
+          "peak_ml_score": 0.63,
+          "other_alerts": 1
+        },
+        {
+          "rule_s": null,
+          "ml_s": null,
+          "detected": false,
+          "peak_cpu": 6.3,
+          "peak_ml_score": 0.27,
+          "other_alerts": 1
+        },
+        {
+          "rule_s": null,
+          "ml_s": null,
+          "detected": false,
+          "peak_cpu": 6.3,
+          "peak_ml_score": 0.27,
+          "other_alerts": 1
+        }
+      ],
+      "detection_rate": 0.0,
+      "rule_rate": 0.0,
+      "ml_rate": 0.0
+    },
+    {
+      "scenario": "Stealth miner",
+      "simulates": "1 core at 50% duty, ~3% of the PC",
+      "trials": [
+        {
+          "rule_s": null,
+          "ml_s": null,
+          "detected": false,
+          "peak_cpu": 3.3,
+          "peak_ml_score": 0.27,
+          "other_alerts": 1
+        },
+        {
+          "rule_s": null,
+          "ml_s": null,
+          "detected": false,
+          "peak_cpu": 3.2,
+          "peak_ml_score": 0.27,
+          "other_alerts": 1
+        },
+        {
+          "rule_s": null,
+          "ml_s": null,
+          "detected": false,
+          "peak_cpu": 3.2,
+          "peak_ml_score": 0.27,
+          "other_alerts": 1
+        }
+      ],
+      "detection_rate": 0.0,
+      "rule_rate": 0.0,
+      "ml_rate": 0.0
+    },
+    {
+      "scenario": "Miner from Temp",
+      "simulates": "1 core, runs from %TEMP%",
+      "trials": [
+        {
+          "rule_s": 4.0,
+          "ml_s": null,
+          "detected": true,
+          "peak_cpu": 6.2,
+          "peak_ml_score": 0.27,
+          "other_alerts": 1
+        },
+        {
+          "rule_s": 4.0,
+          "ml_s": null,
+          "detected": true,
+          "peak_cpu": 6.2,
+          "peak_ml_score": 0.27,
+          "other_alerts": 1
+        },
+        {
+          "rule_s": 4.0,
+          "ml_s": null,
+          "detected": true,
+          "peak_cpu": 6.2,
+          "peak_ml_score": 0.27,
+          "other_alerts": 1
+        }
+      ],
+      "detection_rate": 1.0,
+      "rule_rate": 1.0,
+      "ml_rate": 0.0
+    }
+  ],
+  "scanner": {
+    "labelled": {
+      "files": 25,
+      "malicious_or_suspicious": 4,
+      "detected": 4,
+      "false_positives": 0,
+      "missed": 0
+    },
+    "real_software": {
+      "root": "C:\\Program Files",
+      "files_scanned": 3000,
+      "false_positives": 0,
+      "files_per_second": 350.5,
+      "flagged": []
+    }
+  },
+  "network": {
+    "synthetic": [
+      {
+        "case": "Known-bad IP + risky port",
+        "expected": "HIGH",
+        "got": "HIGH"
+      },
+      {
+        "case": "Normal HTTPS",
+        "expected": "OK/LOW",
+        "got": "OK"
+      }
+    ],
+    "known_bad_ips_loaded": 488,
+    "real_connections": 39,
+    "real_high": []
+  },
+  "performance": {
+    "sample_ms_median": 30.1,
+    "sample_ms_p95": 52.1,
+    "detector_ram_mb": 140,
+    "total_minutes": 17.4
+  }
+}
